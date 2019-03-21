@@ -8,13 +8,10 @@
 
 #include <time.h>
 #include <iostream>
+
 #import <Foundation/Foundation.h>
 using namespace std;
 
-typedef struct {
-    const char* name;
-    int age;
-} Student;
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -23,6 +20,5 @@ int main(int argc, const char * argv[]) {
     }
     
     
-   
     return 0;
 }

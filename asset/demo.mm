@@ -49,3 +49,14 @@ void dateTimeDemo(){
     cout<<"本地时间："<<dt<<endl;
 }
 
+//文件读写
+void fileDemo(){
+    FILE* f;
+    if((f=fopen("/Volumes/APFS_LOCAL/project/project_oc/asset/stu.txt", "w"))==NULL){
+        cout<<"打开文件失败";
+    }else{
+        fprintf(f,"%s","程序写入1");
+    }
+    fclose(f);
+}
+
